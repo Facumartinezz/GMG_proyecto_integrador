@@ -1,2 +1,15 @@
+#section-peliculas-del-momento {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+.ul-peliculas-del-momento{
+ display: flex;
+ list-style-type: none;   
+ 
+}
 
-
+.ul-series-del-momento{
+    display: flex;
+    list-style-type: none;
+}
