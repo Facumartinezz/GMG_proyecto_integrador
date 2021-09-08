@@ -5,34 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body id="body-primer-hoja">
 
-    <header id="header-primer-hoja">
+    <header id="header">
 
-        <div class="div-primer-hoja">
+        <div id="div-buscador">
+            <form action="resultados.html"></form>
 
-                <input type="text" class="buscador-primer-hoja" placeholder="¿Qué estas buscando?">
-                <a href=""></a>   
-                          
+            <input name="buscador" class="buscador-home" type="search" placeholder="¿Qué estas buscando?">
 
-            
-
-            <ul class="ul-primer-hoja">
-                <li><a href="">link </a></li>
-                <li><a href="">link </a></li>
-                <li><a href="">link </a></li>
-                <li><a href="">link </a></li>
-                <li><a href="">link </a></li>
-                <li><a href="">link </a></li>
-                <li><a href="">link </a></li>
-            </ul>
+            <button type="search">
+                <i class="fas fa-search"></i>
+            </button>
 
         </div>
-        <div id="div-primer-hoja">
-        <img src="../img/logo.jpeg" alt="GMG Films">
+        <div>
 
-        <h1>gmg films</h1>
+
+         <img class="img-logo" src="../img/logoo.jpg" alt="GMG Films" >
+
+         <h1 class="header-logoname">gmg films</h1>
+
+
+        </div>
+
+
+        <div class="div-menu">
+   
+          
+
+            <ul class="ul-header">
+                <li class="li-header">
+                    <a href="home.html" class="a-header">home </a>
+                </li>
+
+                <li class="li-header">
+                    <a href="detalle.html" class="a-header">detalle </a>
+                </li>
+
+                <li class="li-header">
+                    <a href="favoritos.html" class="a-header">favortios </a>
+                </li>
+
+                <li class="li-header">
+                    <a href="generos.html" class="a-header">generos </a>
+                </li>
+
+                <li class="li-header">
+                    <a href="detallesdelgenero.html" class="a-header">detalles de generos </a>
+                </li>
+
+                <li class="li-header">
+                    <a href="resultados.html" class="a-header">resultados de busqueda </a>
+                </li>
+                
+            </ul>
+            
         </div>
 
     </header>
@@ -42,29 +72,29 @@
         <section id="section-peliculas-del-momento">
 
         <h2 class="h2-peliculas-del-momento">
-            Peliculas mas populares del momento  
+            peliculas mas populares del momento  
         </h2>
 
         <ul class="ul-peliculas-del-momento">
 
             <li class="li-peliculas-del-momento">
-                <img src="../img/proyecto_x.jpg" alt="Proyecto X" height="500px" width="500px"> <p>proyecto x</p>
+                <img src="../img/proyecto_x.jpg" alt="Proyecto X" height="350px" width="350px"> 
             </li>
 
             <li class="li-peliculas-del-momento">
-                <img src="../img/notebook.jpg" alt="The notebook" height="500px" width="500px">the notebook
+                <img src="../img/notebook.jpg" alt="The notebook" height="350px" width="350px">
             </li>
 
             <li class="li-peliculas-del-momento">
-                <img src="../img/unnamed.jpg" alt="SW3" height="500px" width="500px">star wars III, la venganza de los sith
+                <img src="../img/unnamed.jpg" alt="SW3" height="350px" width="350px">
             </li>
 
             <li class="li-peliculas-del-momento">
-                <img src="../img/spiderman.jpg" alt="Spider Man 3" height="500px" width="500px">spider man 3
+                <img src="../img/spiderman.jpg" alt="Spider Man 3" height="350px" width="350px">
             </li>
 
             <li class="li-peliculas-del-momento">
-                <img src="../img/scarymovie.jpg" alt="Scary Movie" height="500px" width="500px">scary movie
+                <img src="../img/scarymovie.jpg" alt="Scary Movie" height="350px" width="350px">
             </li>
 
 
@@ -77,32 +107,51 @@
         <ul class="ul-series-del-momento">
 
             <li>
-                <img src="../img/theoffice.jpg" alt="The Office" height="500px" width="500px">the office
+                <img src="../img/theoffice.jpg" alt="The Office" height="350px" width="350px">
             </li>
 
             <li>
-                <img src="../img/theblacklist.jpg" alt="The blacklist" height="500px" width="500px">the blacklist
+                <img src="../img/theblacklist.jpg" alt="The blacklist" height="350px" width="350px">
             </li>
 
             <li>
-                <img src="../img/thebigbang.jpg" alt="The big bang" height="500px" width="500px">the big bang theory
+                <img src="../img/bigbang.jpg" alt="The big bang" height="350px" width="350px">
             </li>
 
             <li>
-                <img src="../img/peakyblinders.jpg" alt="Peaky Blinders" height="500px" width="500px">peaky blinders
+                <img src="../img/peakyblinders.jpg" alt="Peaky Blinders" height="350px" width="350px">
             </li>
 
             <li>
-                <img src="../img/drhouse.jpg" alt="Dr. House" height="500px" width="500px">dr. house
+                <img src="../img/drhouse.jpg" alt="Dr. House" height="350px" width="350px">
             </li>
 
         </ul>
 
     </section>
 
+    <section id="lo-mas-visto-en-peliculas">
+        <h2>
+            lo mas visto en peliculas
+        </h2>
+
+        <ul class="ul-lo-mas-visto-en-peliculas"></ul>
+    </section>
+
     </main>
 
-    <footer id="footer-primer-hoja">
+    <footer id="footer">
+        <div>
+            guerrico, joaquín
+        </div>
+
+        <div>
+            grimberg, thiago
+        </div>
+
+        <div>
+            martínez zorzi, facundo
+        </div>
 
     </footer>
 
