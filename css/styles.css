@@ -35,6 +35,8 @@ body{
 #header{
     background-color: black;
     padding: 0px 0px 20px 0px;
+   
+    
 }
 
 #div-buscador{
@@ -75,3 +77,25 @@ flex-wrap: wrap;
     font-weight: bold;
     font-size: 20px;
 }
+    /*termina el footer*/
+
+    /*empieza genres.html*/
+
+    #section-titulo-generos{
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .li-generos-peliculas {
+        list-style-type: none;
+    }
+
+    .a-generos-peliculas{
+       text-decoration: none;
+       color: green;
+
+    }
+
+
+    
+
