@@ -6,12 +6,22 @@ body{
 
      /*empieza el header*/
 
+     
+.ul-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
 .ul-header .li-header{
     text-transform: uppercase;
     list-style-type: none;
     text-align: center;
     background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    
 }
 
 .a-header{
@@ -26,25 +36,31 @@ body{
     text-indent: 30px;
 }
 
+.a-img-header{
+    text-decoration: none;
+}
 
 .img-logo{
     text-align: center;
 }
 
+.div-menu{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
 
 #header{
     background-color: black;
     padding: 0px 0px 20px 0px;
-   
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
-
-#div-buscador{
-    text-align: right;
-}
-
 
     /*empieza el main*/
+
 
 #section-peliculas-del-momento {
 display: flex;
@@ -124,10 +140,13 @@ flex-wrap: wrap;
     font-weight: bold;
     font-size: 20px;
 }
+
     /*termina el footer*/
+
 
     /*empieza genres.html*/
 
+    
     #section-titulo-generos{
         text-align: center;
         text-transform: uppercase;
@@ -146,6 +165,7 @@ flex-wrap: wrap;
 
     /*empieza detalles de generos*/
 
+
 .h1-detalles-generos{
     text-align: center;
 
@@ -155,5 +175,5 @@ flex-wrap: wrap;
 }
 
 
-    
+
 
