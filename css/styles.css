@@ -144,5 +144,16 @@ flex-wrap: wrap;
     }
 
 
+    /*empieza detalles de generos*/
+
+.h1-detalles-generos{
+    text-align: center;
+
+}
+.li-detalles-generos{
+    list-style-type: none;
+}
+
+
     
 
