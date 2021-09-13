@@ -158,21 +158,14 @@ flex-wrap: wrap;
 
     .a-generos-peliculas{
        text-decoration: none;
-       color: green;
+       color: orange;
+       font-size: 25px;
+       font-weight: bold;
 
     }
 
 
-    /*empieza detalles de generos*/
-
-
-.h1-detalles-generos{
-    text-align: center;
-
-}
-.li-detalles-generos{
-    list-style-type: none;
-}
+   
 
     /*detalles de peliculas*/
 
@@ -181,6 +174,7 @@ flex-wrap: wrap;
     text-decoration: underline;
     color: red;
 }
+
 
 .ul-detail-movies{
     list-style: none;
@@ -199,6 +193,43 @@ ul li .primer-a-detail-movies{
 ul li{
     width: 100%;
 }
+
+/*Detalles de series*/
+
+.li-generos-series{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.a-generos-series{
+    text-decoration: none;
+       color: orange;
+       font-size: 25px;
+       font-weight: bold;
+}
+
+/*termine genres.html*/
+
+ /*empieza detalles de generos*/
+
+
+ .h1-detalles-generos{
+    text-align: center;
+
+}
+.li-detalles-generos{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.li-detalles-de-series{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 
 
 /*peliculas favoritas*/
