@@ -158,7 +158,9 @@ flex-wrap: wrap;
 
     .a-generos-peliculas{
        text-decoration: none;
-       color: green;
+       color: orange;
+       font-size: 25px;
+       font-weight: bold;
 
     }
 
@@ -172,6 +174,8 @@ flex-wrap: wrap;
 }
 .li-detalles-generos{
     list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
 }
 
     /*detalles de peliculas*/
@@ -181,6 +185,7 @@ flex-wrap: wrap;
     text-decoration: underline;
     color: red;
 }
+
 
 .ul-detail-movies{
     list-style: none;
