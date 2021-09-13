@@ -205,6 +205,28 @@ ul li{
     width: 100%;
 }
 
+/*Detalles de series*/
+
+.li-generos-series{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.a-generos-series{
+    text-decoration: none;
+       color: orange;
+       font-size: 25px;
+       font-weight: bold;
+}
+
+
+
+
+
+
+/*termine genres.html*/
+
 
 /*peliculas favoritas*/
 
