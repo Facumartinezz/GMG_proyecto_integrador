@@ -177,7 +177,9 @@ flex-wrap: wrap;
     /*detalles de peliculas*/
 
 .h2-main-detail-movies{
-    text-transform: capitalize;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: red;
 }
 
 .ul-detail-movies{
