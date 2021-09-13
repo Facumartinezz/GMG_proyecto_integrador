@@ -5,6 +5,14 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+h1{
+    font-weight: 900;
+}
+
+h2{
+   font-weight: 800;
+}
+
 
 
      /*empieza el header*/
