@@ -165,18 +165,7 @@ flex-wrap: wrap;
     }
 
 
-    /*empieza detalles de generos*/
-
-
-.h1-detalles-generos{
-    text-align: center;
-
-}
-.li-detalles-generos{
-    list-style-type: none;
-    font-size: 25px;
-    font-weight: bold;
-}
+   
 
     /*detalles de peliculas*/
 
@@ -220,12 +209,27 @@ ul li{
        font-weight: bold;
 }
 
-
-
-
-
-
 /*termine genres.html*/
+
+ /*empieza detalles de generos*/
+
+
+ .h1-detalles-generos{
+    text-align: center;
+
+}
+.li-detalles-generos{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.li-detalles-de-series{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 
 
 /*peliculas favoritas*/
