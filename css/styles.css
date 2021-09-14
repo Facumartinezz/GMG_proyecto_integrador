@@ -225,6 +225,11 @@ ul li{
        font-weight: bold;
 }
 
+.primer-a-detail-series{
+    text-decoration: none;
+    color: white;
+}
+
 /*termine genres.html*/
 
  /*empieza detalles de generos*/
@@ -253,3 +258,4 @@ ul li{
 .h1-peliculas-favoritas{
     text-transform: capitalize;
 }
+
