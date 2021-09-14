@@ -2,7 +2,18 @@ body{
     text-transform: capitalize;
     background-color: rgb(20, 20, 20);
     color: white;
+    font-family: 'Raleway', sans-serif;
 }
+
+h1{
+    font-weight: 900;
+}
+
+h2{
+   font-weight: 800;
+}
+
+
 
      /*empieza el header*/
 
