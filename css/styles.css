@@ -14,7 +14,6 @@ h2{
 }
 
 
-
      /*empieza el header*/
 
 
@@ -207,29 +206,17 @@ ul li{
 
 /*Detalles de series*/
 
-.h2-main-detail-series{
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: red;
+.li-generos-series{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-
-.ul-detail-series{
-    list-style: none;
-    text-transform: capitalize;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-ul li .primer-a-detail-series{
+.a-generos-series{
     text-decoration: none;
-    color: white;
-}
-
-ul li{
-    width: 100%;
+       color: orange;
+       font-size: 25px;
+       font-weight: bold;
 }
 
 /*termine genres.html*/
