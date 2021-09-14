@@ -76,68 +76,74 @@ h2{
 #section-peliculas-del-momento {
 display: flex;
 flex-wrap: wrap;
+overflow-x: scroll;
 }
 
 
 .ul-peliculas-del-momento{
  display: flex;
  list-style-type: none; 
- flex-wrap: wrap;  
+ flex-wrap: nowrap;  
 }
 
 #section-series-del-momento {
     display: flex;
     flex-wrap: wrap;
+    overflow-x: scroll;
 }
 
 .ul-series-del-momento{
     display: flex;
     list-style-type: none;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
-#section-lo-mas-visto-en-peliculas {
+#lo-mas-visto-en-peliculas {
     display: flex;
     flex-wrap: wrap;
+    overflow-x: scroll;
 }
 
 .ul-lo-mas-visto-en-peliculas {
     display: flex;
     list-style-type: none; 
-    flex-wrap: wrap;  
+    flex-wrap: nowrap;  
 }
 
-#section-lo-mas-visto-en-series {
+#lo-mas-visto-en-series {
     display: flex;
     flex-wrap: wrap;
+    overflow-x: scroll;
 }
 
 .ul-lo-mas-visto-en-series {
     display: flex;
     list-style-type: none; 
-    flex-wrap: wrap;  
+    flex-wrap: nowrap;  
 }
 
-#section-las-peliculas-mas-valoradas {
+#las-peliculas-mas-valoradas {
     display: flex;
     flex-wrap: wrap;
+    overflow-x: scroll;
 }
 
 .ul-las-peliculas-mas-valoradas {
     display: flex;
     list-style-type: none; 
-    flex-wrap: wrap;  
+    flex-wrap: nowrap;  
 }
 
-#section-las-series-mas-valoradas {
+#las-series-mas-valoradas {
     display: flex;
     flex-wrap: wrap;
+    overflow-x: scroll;
 }
 
 .ul-las-series-mas-valoradas {
     display: flex;
     list-style-type: none; 
-    flex-wrap: wrap;  
+    flex-wrap: nowrap;  
 }
 
     /*empieza el footer*/
