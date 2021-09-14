@@ -160,25 +160,7 @@ overflow-x: scroll;
     /*termina el footer*/
 
 
-    /*empieza genres.html*/
-
-    
-    #section-titulo-generos{
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    .li-generos-peliculas {
-        list-style-type: none;
-    }
-
-    .a-generos-peliculas{
-       text-decoration: none;
-       color: orange;
-       font-size: 25px;
-       font-weight: bold;
-
-    }
+   
 
 
    
@@ -246,6 +228,30 @@ ul li{
     color: white;
 }
 
+.li-detail-series{
+    list-style: none;
+}
+
+ /*empieza genres.html*/
+
+    
+    #section-titulo-generos{
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .li-generos-peliculas {
+        list-style-type: none;
+    }
+
+    .a-generos-peliculas{
+       text-decoration: none;
+       color: orange;
+       font-size: 25px;
+       font-weight: bold;
+
+    }
+    
 /*termine genres.html*/
 
  /*empieza detalles de generos*/
