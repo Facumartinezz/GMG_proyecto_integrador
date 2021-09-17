@@ -17,22 +17,27 @@ h2{
      /*empieza el header*/
 
 
-.ul-header {
+.ul-header{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 600px;
 }
 
 .ul-header .li-header{
     text-transform: uppercase;
     list-style-type: none;
-    text-align: center;
     background-color: black;
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
     
 }
+
+
 
 .a-header{
     text-decoration: none;
@@ -57,7 +62,7 @@ h2{
 .div-menu{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    
 }
 
 #header{
@@ -238,11 +243,12 @@ ul li{
        font-weight: bold;
 
     }
-    
+
 /*termine genres.html*/
 
  /*empieza detalles de generos*/
 
+ #section-
 
  .h1-detalles-generos{
     text-align: center;
@@ -275,7 +281,11 @@ ul li{
 
 /*peliculas favoritas*/
 
-.h1-peliculas-favoritas{
+section div .h1-peliculas-favoritas{
     text-transform: capitalize;
+    font-size: 35px;
 }
 
+section div ul li{
+    list-style: none;
+}
