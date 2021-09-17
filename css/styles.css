@@ -13,6 +13,10 @@ h2{
    font-weight: 800;
 }
 
+a {
+text-decoration: none;
+color: white;
+}
 
      /*empieza el header*/
 
@@ -200,24 +204,20 @@ ul li{
 
 /*Detalles de series*/
 
-.h2-main-detail-series{
+.h2-main-detail-series {
     text-transform: uppercase;
     text-decoration: underline;
     color: red;
 }
 
-.ul-detail-series{
+.li-detail-series {
     list-style: none;
     text-transform: capitalize;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
-}
-
-ul li .primer-a-detail-series{
-    text-decoration: none;
+    font-size: 10px;
     color: white;
+    text-decoration: none;
 }
 
 ul li{
@@ -241,7 +241,6 @@ ul li{
        color: orange;
        font-size: 25px;
        font-weight: bold;
-
     }
 
 /*termine genres.html*/
@@ -263,13 +262,11 @@ ul li{
 .li-detalles-de-series{
     list-style-type: none;
     font-size: 25px;
-    font-weight: bold;
 }
 
 .li-detail-series{
     list-style-type: none;
     font-size: 25px;
-    font-weight: bold;
 }
 
 .a-generos-series{
