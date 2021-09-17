@@ -14,7 +14,6 @@ h2{
 }
 
 
-
      /*empieza el header*/
 
 
@@ -166,25 +165,7 @@ overflow-x: scroll;
     /*termina el footer*/
 
 
-    /*empieza genres.html*/
-
-    
-    #section-titulo-generos{
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    .li-generos-peliculas {
-        list-style-type: none;
-    }
-
-    .a-generos-peliculas{
-       text-decoration: none;
-       color: orange;
-       font-size: 25px;
-       font-weight: bold;
-
-    }
+   
 
 
    
@@ -218,35 +199,53 @@ ul li{
 
 /*Detalles de series*/
 
-.h2-main-detail-series{
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: red;
+.li-generos-series{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-
-.ul-detail-series{
-    list-style: none;
-    text-transform: capitalize;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
+.a-generos-series{
+    text-decoration: none;
+       color: orange;
+       font-size: 25px;
+       font-weight: bold;
 }
 
-ul li .primer-a-detail-series{
+.primer-a-detail-series{
     text-decoration: none;
     color: white;
 }
 
-ul li{
-    width: 100%;
+.li-detail-series{
+    list-style: none;
 }
+
+ /*empieza genres.html*/
+
+    
+    #section-titulo-generos{
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .li-generos-peliculas {
+        list-style-type: none;
+    }
+
+    .a-generos-peliculas{
+       text-decoration: none;
+       color: orange;
+       font-size: 25px;
+       font-weight: bold;
+
+    }
 
 /*termine genres.html*/
 
  /*empieza detalles de generos*/
 
+ #section-
 
  .h1-detalles-generos{
     text-align: center;
