@@ -210,26 +210,13 @@ ul li{
     flex-direction: row;
 }
 
-.li-detail-series{
-    list-style-type: none;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.a-generos-series{
-    text-decoration: none;
-    color: orange;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.primer-a-detail-series{
+ul li .primer-a-detail-series{
     text-decoration: none;
     color: white;
 }
 
-.li-detail-series{
-    list-style: none;
+ul li{
+    width: 100%;
 }
 
  /*empieza genres.html*/
@@ -273,7 +260,18 @@ ul li{
     font-weight: bold;
 }
 
+.li-detail-series{
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+}
 
+.a-generos-series{
+    text-decoration: none;
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+}
 
 /*peliculas favoritas*/
 
