@@ -275,3 +275,35 @@ section div .h1-peliculas-favoritas{
 section div ul li{
     list-style: none;
 }
+
+
+/*responsive*/
+
+@media (max-width: 426px){
+    body{
+        background-color: rgb(80, 80, 80);
+    }
+    
+    #header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul-header{
+        display: flex;
+        flex-wrap: wrap;
+        width: 10px;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .ul-header .li-header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
