@@ -13,6 +13,10 @@ h2{
    font-weight: 800;
 }
 
+a {
+text-decoration: none;
+color: white;
+}
 
      /*empieza el header*/
 
@@ -197,28 +201,27 @@ ul li{
     width: 100%;
 }
 
+
 /*Detalles de series*/
 
-.li-generos-series{
-    list-style-type: none;
-    font-size: 25px;
-    font-weight: bold;
+.h2-main-detail-series {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: red;
 }
 
-.a-generos-series{
-    text-decoration: none;
-       color: orange;
-       font-size: 25px;
-       font-weight: bold;
-}
-
-.primer-a-detail-series{
-    text-decoration: none;
-    color: white;
-}
-
-.li-detail-series{
+.li-detail-series {
     list-style: none;
+    text-transform: capitalize;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+ul li{
+    width: 100%;
 }
 
  /*empieza genres.html*/
@@ -238,7 +241,6 @@ ul li{
        color: orange;
        font-size: 25px;
        font-weight: bold;
-
     }
 
 /*termine genres.html*/
@@ -260,10 +262,19 @@ ul li{
 .li-detalles-de-series{
     list-style-type: none;
     font-size: 25px;
-    font-weight: bold;
 }
 
+.li-detail-series{
+    list-style-type: none;
+    font-size: 25px;
+}
 
+.a-generos-series{
+    text-decoration: none;
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+}
 
 /*peliculas favoritas*/
 
