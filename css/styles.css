@@ -287,6 +287,7 @@ section div ul li{
     list-style: none;
 }
 
+<<<<<<< HEAD
 /* comienza resultados de búsqueda */
 
 .li-resultados-busqueda {
@@ -301,3 +302,36 @@ section div ul li{
     text-decoration: underline;
     color: blue;
 }
+=======
+
+/*responsive*/
+
+@media (max-width: 426px){
+    body{
+        background-color: rgb(80, 80, 80);
+    }
+    
+    #header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul-header{
+        display: flex;
+        flex-wrap: wrap;
+        width: 10px;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .ul-header .li-header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+>>>>>>> 49070faf44039e6f36bf1c17143523f908b2c6a0
