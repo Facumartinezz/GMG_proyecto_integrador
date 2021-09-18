@@ -1,6 +1,6 @@
 body{
     text-transform: capitalize;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(80, 80, 80);
     color: white;
     font-family: 'Raleway', sans-serif;
 }
@@ -236,8 +236,19 @@ ul li{
         list-style-type: none;
     }
 
+    .li-generos-series{
+        list-style: none;
+    }
+
     .a-generos-peliculas{
        text-decoration: none;
+       color: orange;
+       font-size: 25px;
+       font-weight: bold;
+    }
+
+    .a-generos-series{
+        text-decoration: none;
        color: orange;
        font-size: 25px;
        font-weight: bold;
@@ -292,7 +303,7 @@ section div ul li{
 
 @media (max-width: 426px){
     body{
-        background-color: rgb(80, 80, 80);
+        background-color: rgb(20, 20, 20);
     }
     
     #header{
