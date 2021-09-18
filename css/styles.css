@@ -298,6 +298,20 @@ section div ul li{
     list-style: none;
 }
 
+/* comienza resultados de búsqueda */
+
+.li-resultados-busqueda {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+#a-related {
+    text-decoration: underline;
+    color: blue;
+}
 
 /*responsive*/
 
