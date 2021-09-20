@@ -1,6 +1,6 @@
 body{
     text-transform: capitalize;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(20, 20, 20);
     color: white;
     font-family: 'Raleway', sans-serif;
 }
@@ -313,6 +313,7 @@ section div ul li{
     color: blue;
 }
 
+
 /*responsive*/
 
 @media (max-width: 426px){
@@ -341,5 +342,9 @@ section div ul li{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+
+    .li-resultados-busqueda img {
+        width: 90%;
     }
 }
