@@ -313,20 +313,9 @@ section div ul li{
         align-items: center;
     }
 
-    .ul-header{
-        display: flex;
-        flex-wrap: wrap;
-        width: 10px;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .ul-header .li-header{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    .nav-header {
+        height: 100px;
+        width: 100%;
     }
 
     .li-resultados-busqueda img {
