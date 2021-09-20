@@ -18,30 +18,24 @@ text-decoration: none;
 color: white;
 }
 
-     /*empieza el header*/
+/*empieza el header*/
 
-
-.ul-header{
+.nav-header {
+    justify-content: space-around;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    max-width: 600px;
+    margin-bottom: 20px;
 }
 
-.ul-header .li-header{
-    text-transform: uppercase;
-    list-style-type: none;
-    background-color: black;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.a-header{
+.a-header {
     text-decoration: none;
     color: white;
+    display: flex;
+    width: 180px;
+    margin-right: 20px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
 }
 
 
@@ -149,7 +143,7 @@ overflow-x: scroll;
     flex-wrap: nowrap;  
 }
 
-    /*empieza el footer*/
+/*empieza el footer*/
 
 
 #footer{
@@ -161,20 +155,15 @@ overflow-x: scroll;
     font-size: 20px;
 }
 
-    /*termina el footer*/
+/*termina el footer*/
 
-
-   
-
-
-   
-
-    /*detalles de peliculas*/
+/*detalles de peliculas*/
 
 .h2-main-detail-movies{
     text-transform: uppercase;
     text-decoration: underline;
     color: red;
+    text-align: center;
 }
 
 .ul-detail-movies{
@@ -182,8 +171,7 @@ overflow-x: scroll;
     text-transform: capitalize;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(100, 100, 100);
     padding: 20px 20px 10px 20px;
     border-radius: 20px;
@@ -201,6 +189,7 @@ ul li .primer-a-detail-movies{
     text-transform: uppercase;
     text-decoration: underline;
     color: red;
+    text-align: center;
 }
 
 .ul-detail-series {
@@ -208,7 +197,7 @@ ul li .primer-a-detail-movies{
     text-transform: capitalize;
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(100, 100, 100);
     padding: 20px 20px 10px 20px;
     border-radius: 20px;
@@ -223,62 +212,43 @@ ul li .primer-a-detail-series {
  /*empieza genres.html*/
 
     
-    #section-titulo-generos{
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    .li-generos-peliculas {
-        list-style-type: none;
-    }
-
-    .li-generos-series{
-        list-style: none;
-    }
-
-    .a-generos-peliculas{
-       text-decoration: none;
-       color: orange;
-       font-size: 25px;
-       font-weight: bold;
-    }
-
-    .a-generos-series{
-        text-decoration: none;
-       color: orange;
-       font-size: 25px;
-       font-weight: bold;
-    }
-
-/*termine genres.html*/
-
- /*empieza detalles de generos*/
-
- #section-
-
- .h1-detalles-generos{
+#section-titulo-generos{
     text-align: center;
-
+    text-transform: uppercase;
 }
-.li-detalles-generos{
+
+.li-generos-peliculas {
     list-style-type: none;
+}
+
+.li-generos-series{
+    list-style: none;
+}
+
+.a-generos-peliculas{
+    text-decoration: none;
+    color: orange;
     font-size: 25px;
     font-weight: bold;
-}
-
-.li-detalles-de-series{
-    list-style-type: none;
-    font-size: 25px;
-}
-
-.li-detail-series{
-    list-style-type: none;
-    font-size: 25px;
 }
 
 .a-generos-series{
     text-decoration: none;
     color: orange;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*termine genres.html*/
+
+/*empieza detalles de generos*/
+
+.h1-detalles-generos{
+    text-align: left;
+}
+
+.li-detalles-generos{
+    list-style-type: none;
     font-size: 25px;
     font-weight: bold;
 }
