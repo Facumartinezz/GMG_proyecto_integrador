@@ -25,7 +25,7 @@ color: white;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    width: 600px;
+    max-width: 600px;
 }
 
 .ul-header .li-header{
@@ -37,11 +37,7 @@ color: white;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-    
 }
-
-
 
 .a-header{
     text-decoration: none;
@@ -66,7 +62,6 @@ color: white;
 .div-menu{
     display: flex;
     flex-wrap: nowrap;
-    
 }
 
 #header{
@@ -182,25 +177,23 @@ overflow-x: scroll;
     color: red;
 }
 
-
 .ul-detail-movies{
     list-style: none;
     text-transform: capitalize;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     flex-direction: row;
+    background-color: rgb(100, 100, 100);
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    align-items: center;
 }
 
 ul li .primer-a-detail-movies{
     text-decoration: none;
     color: white;
 }
-
-ul li{
-    width: 100%;
-}
-
 
 /*Detalles de series*/
 
@@ -210,18 +203,21 @@ ul li{
     color: red;
 }
 
-.li-detail-series {
+.ul-detail-series {
     list-style: none;
     text-transform: capitalize;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    font-size: 10px;
-    color: white;
-    text-decoration: none;
+    background-color: rgb(100, 100, 100);
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    align-items: center;
 }
 
-ul li{
-    width: 100%;
+ul li .primer-a-detail-series {
+    text-decoration: none;
+    color: white;
 }
 
  /*empieza genres.html*/
@@ -347,4 +343,25 @@ section div ul li{
     .li-resultados-busqueda img {
         width: 90%;
     }
+
+    .h2-main-detail-movies {
+        text-align: center;
+    }
+
+    .ul-detail-movies {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .h2-main-detail-series {
+        text-align: center;
+    }
+
+    .ul-detail-series {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
 }
