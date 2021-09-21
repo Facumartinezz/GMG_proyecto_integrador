@@ -18,7 +18,12 @@ text-decoration: none;
 color: white;
 }
 
-/*empieza el header*/
+li{
+    list-style-type: none;
+}
+
+
+/*Empieza el header*/
 
 .nav-header {
     justify-content: space-around;
@@ -37,7 +42,6 @@ color: white;
     flex-direction: column;
     text-transform: uppercase;
 }
-
 
 .header-logoname{
     color: white;
@@ -67,15 +71,16 @@ color: white;
     justify-content: space-between;
 }
 
-    /*empieza el main*/
+/*Termina el header*/
 
+
+/*Empieza el main*/
 
 #section-peliculas-del-momento {
 display: flex;
 flex-wrap: wrap;
 overflow-x: scroll;
 }
-
 
 .ul-peliculas-del-momento{
  display: flex;
@@ -143,8 +148,10 @@ overflow-x: scroll;
     flex-wrap: nowrap;  
 }
 
-/*empieza el footer*/
+/*Termina el main*/
 
+
+/*Empieza el footer*/
 
 #footer{
     background-color: red;
@@ -153,11 +160,13 @@ overflow-x: scroll;
     border-radius: 15px 15px 0px 0px;
     font-weight: bold;
     font-size: 20px;
+    margin: 20px 0px 0px 0px;
 }
 
-/*termina el footer*/
+/*Termina el footer*/
 
-/*detalles de peliculas*/
+
+/*Detalles de películas*/
 
 .h2-main-detail-movies{
     text-transform: uppercase;
@@ -182,6 +191,9 @@ ul li .primer-a-detail-movies{
     text-decoration: none;
     color: white;
 }
+
+/*Termina detalles de películas*/
+
 
 /*Detalles de series*/
 
@@ -209,8 +221,10 @@ ul li .primer-a-detail-series {
     color: white;
 }
 
- /*empieza genres.html*/
+/*Termina detalle de series*/
 
+
+/*Empieza géneros*/
     
 #section-titulo-generos{
     text-align: center;
@@ -239,9 +253,10 @@ ul li .primer-a-detail-series {
     font-weight: bold;
 }
 
-/*termine genres.html*/
+/*Termina géneros*/
 
-/*empieza detalles de generos*/
+
+/*Empieza detalles de géneros*/
 
 .h1-detalles-generos{
     text-align: left;
@@ -253,7 +268,10 @@ ul li .primer-a-detail-series {
     font-weight: bold;
 }
 
-/*peliculas favoritas*/
+/*Termina detalle de géneros*/
+
+
+/*Empieza películas favoritas*/
 
 section div .h1-peliculas-favoritas{
     text-transform: capitalize;
@@ -264,7 +282,10 @@ section div ul li{
     list-style: none;
 }
 
-/* comienza resultados de búsqueda */
+/*Termina películas favoritas*/
+
+
+/*Empieza resultados de búsqueda */
 
 .li-resultados-busqueda {
     text-decoration: none;
@@ -279,8 +300,10 @@ section div ul li{
     color: blue;
 }
 
+/*Termina resultados de búsqueda*/
 
-/*responsive*/
+
+/*Responsive*/
 
 @media (max-width: 426px){
     body{
@@ -294,20 +317,9 @@ section div ul li{
         align-items: center;
     }
 
-    .ul-header{
-        display: flex;
-        flex-wrap: wrap;
-        width: 10px;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .ul-header .li-header{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    .nav-header {
+        height: 100px;
+        width: 100%;
     }
 
     .li-resultados-busqueda img {
@@ -335,3 +347,5 @@ section div ul li{
     }
 
 }
+
+/*Termina responsive*/
