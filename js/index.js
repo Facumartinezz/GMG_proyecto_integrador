@@ -28,7 +28,7 @@ fetch(url)
 
     </div> 
     
-<article/> 
+</article> 
         `
 }
 })

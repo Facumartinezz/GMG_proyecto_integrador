@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Resultados</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
 <body>
    
     <header id="header">
 
        
-            <form action="./search-results.html" method="GET" id="div-buscador">
+            <form action="./search-results.html" method="get" id="div-buscador">
 
             <input name="buscador" class="buscador-home" type="search" placeholder="¿Qué estas buscando?">
 
@@ -48,27 +49,13 @@
     </header>
 
     <main id="main">
-        <section>
+        
+        <section class="resultados-de-busqueda"></section>
 
+        <div id="loader" class="oculto">
+        Cargando...
+        </div>
 
-            <ul class="ul-resultados">
-
-                <li class="li-resultados-busqueda">
-                    <p> 
-                        explore related titles to: <a href="./detail-movie.html" id="a-related"> rápidos y furiosos </a>
-                    </p>
-                </li>
-
-                <a href="./detail-movie.html">
-                    <li class="li-resultados-busqueda">
-                    <img src="./img/películas/fast_and_furious.jpeg" alt="Rápido y Furiosos" width="350px" height="350px">
-                    </li>
-                </a>
-            
-            </ul>
-
-
-        </section>
     </main>
 
     <footer id="footer">

@@ -99,7 +99,9 @@ justify-content: space-between;
     justify-content: space-between
 }
 
-
+.oculto{
+    visibility: hidden;
+}
 
 /*Termina el main*/
 
@@ -114,6 +116,7 @@ justify-content: space-between;
     font-weight: bold;
     font-size: 20px;
     margin: 20px 0px 0px 0px;
+    
 }
 
 /*Termina el footer*/
@@ -232,6 +235,13 @@ section div ul li{
 #a-related {
     text-decoration: underline;
     color: blue;
+}
+
+.resultados-de-busqueda {
+    display: flex;
+    overflow-x: scroll;
+    gap: 4%;
+    margin: 0px 0px 0px 25px;
 }
 
 /*Termina resultados de búsqueda*/
