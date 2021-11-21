@@ -9,9 +9,7 @@ h1{
     font-weight: 900;
 }
 
-h2{
-   font-weight: 800;
-}
+
 
 a {
 text-decoration: none;
@@ -76,77 +74,32 @@ li{
 
 /*Empieza el main*/
 
-#section-peliculas-del-momento {
+.section-peliculas-del-momento {
 display: flex;
 flex-wrap: wrap;
 overflow-x: scroll;
+justify-content: space-between;
+
 }
 
-.ul-peliculas-del-momento{
- display: flex;
- list-style-type: none; 
- flex-wrap: nowrap;  
-}
 
-#section-series-del-momento {
+
+.section-series-del-momento {
     display: flex;
     flex-wrap: wrap;
     overflow-x: scroll;
+    justify-content: space-between;
 }
 
-.ul-series-del-momento{
-    display: flex;
-    list-style-type: none;
-    flex-wrap: nowrap;
-}
 
-#lo-mas-visto-en-peliculas {
+
+.lo-mas-valorado-en-peliculas {
     display: flex;
     flex-wrap: wrap;
-    overflow-x: scroll;
+    justify-content: space-between
 }
 
-.ul-lo-mas-visto-en-peliculas {
-    display: flex;
-    list-style-type: none; 
-    flex-wrap: nowrap;  
-}
 
-#lo-mas-visto-en-series {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: scroll;
-}
-
-.ul-lo-mas-visto-en-series {
-    display: flex;
-    list-style-type: none; 
-    flex-wrap: nowrap;  
-}
-
-#las-peliculas-mas-valoradas {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: scroll;
-}
-
-.ul-las-peliculas-mas-valoradas {
-    display: flex;
-    list-style-type: none; 
-    flex-wrap: nowrap;  
-}
-
-#las-series-mas-valoradas {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: scroll;
-}
-
-.ul-las-series-mas-valoradas {
-    display: flex;
-    list-style-type: none; 
-    flex-wrap: nowrap;  
-}
 
 /*Termina el main*/
 
@@ -168,28 +121,9 @@ overflow-x: scroll;
 
 /*Detalles de películas*/
 
-.h2-main-detail-movies{
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: red;
-    text-align: center;
-}
-
-.ul-detail-movies{
-    list-style: none;
-    text-transform: capitalize;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    background-color: rgb(100, 100, 100);
-    padding: 20px 20px 10px 20px;
-    border-radius: 20px;
-    align-items: center;
-}
-
-ul li .primer-a-detail-movies{
-    text-decoration: none;
-    color: white;
+.ul-pelicula{
+    margin: 20px 0px 0px 0px;
+    text-transform: none;
 }
 
 /*Termina detalles de películas*/
