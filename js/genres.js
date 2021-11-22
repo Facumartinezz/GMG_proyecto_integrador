@@ -17,7 +17,7 @@ fetch(url1)
                 <article class="generopeliculas">
             
                     <ul class="generos">
-                        <li><a href="comedia.html?id=${data.genres[i].id}">${data.genres[i].name}</a></li>
+                        <li><a href="detail-genres.html?id=${data.genres[i].id}">${data.genres[i].name}</a></li>
                     </ul>
                 </article>
             `
