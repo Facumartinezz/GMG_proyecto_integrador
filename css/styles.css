@@ -168,26 +168,16 @@ ul li .primer-a-detail-series {
     text-transform: uppercase;
 }
 
-.li-generos-peliculas {
-    list-style-type: none;
+#section-generos-peliculas{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.li-generos-series{
-    list-style: none;
-}
-
-.a-generos-peliculas{
-    text-decoration: none;
-    color: orange;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.a-generos-series{
-    text-decoration: none;
-    color: orange;
-    font-size: 25px;
-    font-weight: bold;
+#section-generos-series{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 /*Termina géneros*/
