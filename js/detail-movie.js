@@ -72,3 +72,50 @@ fetch(url)
     console.log('el error fue' + error);
 
 })
+
+// variables del favourites.js
+
+let button = document.querySelector(".boton")
+
+let title = document.querySelector(".titulo-peli")
+
+let releaseDate = document.querySelector(".estreno") 
+
+let img = document.querySelector(".imagen img")
+
+let arrayFavoritos = []
+
+let queryString = window.location.search
+
+let objetoQuery = new URLSearchParams(queryString);
+
+let resultado = objetoQuery.get('id');
+
+button.addEventListener("click", function(){
+    let objeto = {titulo: title.innerText, fechaDeEstreno: releaseDate.innerText, imagen: img.src, type: "pelicula", id: resultado}
+    if(localStorage.getItem("favoritos")){
+        arrayFavoritos = JSON.parse(localStorage.getItem("favoritos"))
+        for (let i = 0; i < arrayFavoritos.length; i++) {
+            if (arrayFavoritos[i].id == objeto.id) {
+             arrayFavoritos.splice(i, 1)   
+             console.log(arrayFavoritos);
+             console.log(1);
+            }
+            else{
+                arrayFavoritos.push(objeto)
+                console.log(2);
+            }
+         }
+    }
+    else{
+        arrayFavoritos.push(objeto)
+        console.log(3);
+    }
+
+    let encontrado 
+    
+    
+
+    localStorage.setItem("favoritos", JSON.stringify(arrayFavoritos))
+})
+
