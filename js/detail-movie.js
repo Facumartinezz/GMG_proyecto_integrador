@@ -90,30 +90,24 @@ let recuperoStorage = localStorage.getItem("favoritos")
 
 button.addEventListener("click", function () {
     let objeto = { titulo: titulo.innerText, fechaDeEstreno: parrafo.innerText.slice(18, 28), imagen: imagen.src, type: "pelicula", id: peliculasPagina}
-    //Condicional que pregunta si tengo algo en localStorage Y si no es nulo
     if (localStorage.getItem("favoritos") && localStorage.getItem("favoritos") != null) {
-    //guarda en el array que declaraste antes lo que encontro en el LS parseado (lo paso de formato JSON a JS)
         arrayFavoritos = JSON.parse(localStorage.getItem("favoritos"))
-    //condicional que pregunta si el array incluye al objeto (lo busca en el array y si es que lo encuentra pregunta si lo incluye)
+
         if (arrayFavoritos.includes(arrayFavoritos.find(function(element){ return element.id == objeto.id}))) {
-
             button.innerText = 'Agregar a favoritos'
-            //elimina 1 objeto en el indice que encontro en arrayFavoritos.indexOf(objeto)
             arrayFavoritos.splice(arrayFavoritos.indexOf(objeto), 1)
-
-            //si no encontro el objeto, quiere decir que no esta, entonces lo agrega
-        } else {
-            //lo pushea
+        } 
+        else {
             arrayFavoritos.push(objeto)
             button.innerText = 'Sacar de favoritos'
         }
-        //si no encontro nada en el LS entonces pushea el objeto al array
-    } else {
+        
+    } 
+    else {
         arrayFavoritos.push(objeto)
         button.innerText = 'Sacar de favoritos'
     }
 
-    //setea el array en el lS con el identificador favoritos
     localStorage.setItem("favoritos", JSON.stringify(arrayFavoritos))
 })
 

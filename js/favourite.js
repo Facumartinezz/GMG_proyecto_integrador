@@ -15,44 +15,46 @@ if(localStorage.getItem("favoritos")) {
     let agregados = JSON.parse(localStorage.getItem("favoritos"));
     let container = document.querySelector("#contenedor-favoritos");
     console.log(JSON.parse(localStorage.getItem("favoritos")));
-    agregados.forEach(function (peliculasSeries) {
-            if (peliculasSeries.type == "pelicula") {
-                container.innerHTML +=
-                    `
-        <article>
-            <div class="portada">  
-                <a href="detail-movie.html?id=${peliculasSeries.id}">
-                <img src="${peliculasSeries.imagen}">
-                </a> 
+    for (let i = 0; i < agregados.length; i++) {
         
-                <h2> ${peliculasSeries.titulo}</h2>
-        
-                <p>Fecha de lanzamiento: ${peliculasSeries.fechaDeEstreno}</p>
-        
-            </div> 
-            
-        </article> 
+        if (agregados[i].type == "pelicula") {
+            container.innerHTML +=
                 `
-            }
-            else {
-                console.log(peliculasSeries);
-                container.innerHTML +=
-                    `
-        <article>
-            <div class="portada">  
-                <a href="detail-series.html?id=${peliculasSeries.id}">
-                <img src="${peliculasSeries.imagen}">
-                </a> 
+    <article>
+        <div class="portada">  
+            <a href="detail-movie.html?id=${agregados[i].id}">
+            <img src="${agregados[i].imagen}">
+            </a> 
+    
+            <h2> ${agregados[i].titulo}</h2>
+    
+            <p>Fecha de lanzamiento: ${agregados[i].fechaDeEstreno}</p>
+    
+        </div> 
         
-                <h2> ${peliculasSeries.titulo}</h2>
-        
-                <p>Fecha de lanzamiento: ${peliculasSeries.fechaDeEstreno}</p>
-        
-            </div> 
-            
-        </article> 
+    </article> 
+            `
+        }
+        else {
+            console.log(agregados[i]);
+            container.innerHTML +=
                 `
-            }
-
-    })
+    <article>
+        <div class="portada">  
+            <a href="detail-series.html?id=${agregados[i].id}">
+            <img src="${agregados[i].imagen}">
+            </a> 
+    
+            <h2> ${agregados[i].titulo}</h2>
+    
+            <p>Fecha de lanzamiento: ${agregados[i].fechaDeEstreno}</p>
+    
+        </div> 
+        
+    </article> 
+            `
+        }
+        
+    }
+    
 }
