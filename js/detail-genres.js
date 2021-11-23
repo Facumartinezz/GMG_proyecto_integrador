@@ -20,12 +20,22 @@ fetch(url)
     })
 
     .then(function(datos){
-        console.log(datos);
-
-        for(let i = 0; i < datos.genres.length; i++){
-            nombre.innerText += "" + datos.name
-
-        }
+            console.log(datos);
+    
+            for(let i = 0; i < datos.generoPagina.length; i++){
+                document.querySelector('#section-detalles-generos').innerHTML +=
+                `
+                    <article class="detalle-genero">
+                        
+                        <ul>
+                            <li>
+                                <a href="detail-genres.html?id= ${datos.genres[i].id}"> <h2>género:</h2> ${datos.genres[i].name}</a>
+                            </li>
+                        </ul>
+    
+                    </article>
+                `
+            }
 
     })
 
