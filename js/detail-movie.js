@@ -20,7 +20,7 @@ peliculasPagina +
 
 const titulo = document.querySelector("h2");
 
-const parrafo = document.querySelector(".estreno");
+const estreno = document.querySelector(".estreno");
 
 const imagen = document.querySelector(".imagen img");
 
@@ -59,7 +59,7 @@ fetch(url)
         `
         }   
 
-        titulo.innerText += " " +
+        titulo.innerText     += " " +
         
         datos.title;
 
@@ -69,7 +69,7 @@ fetch(url)
 
         imagen.alt = datos.title;
 
-        parrafo.innerText += " " + datos.release_date;
+        estreno.innerText += " " + datos.release_date;
 
         trama.innerText += " " + datos.overview;
 
