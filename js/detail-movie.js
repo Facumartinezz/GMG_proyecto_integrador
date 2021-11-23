@@ -22,6 +22,8 @@ const duracion = document.querySelector(".duracion");
 
 const button = document.querySelector(".boton")
 
+const popularidad = document.querySelector(".calificacion")
+
 let url = "https://api.themoviedb.org/3/movie/" + 
 
 peliculasPagina + 
