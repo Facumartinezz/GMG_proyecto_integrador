@@ -78,8 +78,6 @@ fetch(url)
 
 // variables del favourites.js
 
-let button = document.querySelector(".boton")
-
 let arrayFavoritos = []
 let recuperoStorage = localStorage.getItem("favoritos")
 
