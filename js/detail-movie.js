@@ -20,6 +20,7 @@ const trama = document.querySelector(".sinopsis");
 
 const duracion = document.querySelector(".duracion");
 
+
 let url = "https://api.themoviedb.org/3/movie/" + 
 
 peliculasPagina + 
@@ -65,6 +66,7 @@ fetch(url)
         trama.innerText += " " + datos.overview;
 
         duracion.innerText += "" + datos.runtime; 
+
 })
 
 .catch(function (error) {
