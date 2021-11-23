@@ -43,7 +43,7 @@ fetch(url)
 
         genero.innerHTML += `
 
-        <a  href="comedia.html?id= ${datos.genres[i].id}">
+        <a  href="detail-genres.html?id= ${datos.genres[i].id}">
 
          ${datos.genres[i].name},
         <a/>

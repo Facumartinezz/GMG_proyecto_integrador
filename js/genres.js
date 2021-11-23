@@ -14,10 +14,10 @@ fetch(url1)
         for(let i = 0; i < data.genres.length; i++){
             document.querySelector('#section-generos-peliculas').innerHTML +=
             `
-                <article class="generopeliculas">
+                <article class="genero-peliculas">
             
                     <ul class="generos">
-                        <li><a href="comedia.html?id=${data.genres[i].id}">${data.genres[i].name}</a></li>
+                        <li><a href="detail-genres.html?id=${data.genres[i].id}">${data.genres[i].name}</a></li>
                     </ul>
                 </article>
             `
@@ -44,10 +44,10 @@ fetch(url2)
         for(let i = 0; i < data.genres.length; i++){
             document.querySelector('#section-generos-series').innerHTML +=
             `
-                <article class="generoseries">
+                <article class="genero-series">
             
                     <ul class="generos">
-                        <li><a href="comedia.html?id=${data.genres[i].id}">${data.genres[i].name}</a></li>
+                        <li><a href="detail-genres.html?id=${data.genres[i].id}">${data.genres[i].name}</a></li>
                     </ul>
                 </article>
             `

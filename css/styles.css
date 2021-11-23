@@ -77,26 +77,40 @@ li{
 .section-peliculas-del-momento {
 display: flex;
 flex-wrap: wrap;
-overflow-x: scroll;
 justify-content: space-between;
-
 }
-
 
 
 .section-series-del-momento {
     display: flex;
     flex-wrap: wrap;
-    overflow-x: scroll;
     justify-content: space-between;
 }
 
+.series-momento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pelis-momento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pelis-valoradas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 .lo-mas-valorado-en-peliculas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
+    
 }
 
 .oculto{
@@ -111,23 +125,19 @@ justify-content: space-between;
 #footer{
     background-color: red;
     text-transform: capitalize;
-    text-align: center;
     border-radius: 15px 15px 0px 0px;
-    font-weight: bold;
     font-size: 20px;
     margin: 20px 0px 0px 0px;
-    
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;
 }
+
 
 /*Termina el footer*/
 
 
 /*Detalles de películas*/
-
-.ul-pelicula{
-    margin: 20px 0px 0px 0px;
-    text-transform: none;
-}
 
 /*Termina detalles de películas*/
 
