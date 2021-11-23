@@ -114,11 +114,15 @@ justify-content: space-between;
 }
 
 .oculto{
-    visibility: hidden;
+    display: none;
 }
 
 /*Termina el main*/
 
+/* boton */
+.boton{
+    cursor: pointer;
+}
 
 /*Empieza el footer*/
 

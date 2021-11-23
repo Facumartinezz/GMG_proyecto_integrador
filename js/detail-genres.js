@@ -25,13 +25,8 @@ fetch(url)
                     
                     <ul>
                         <li>
-                            <a href="detail-genres.html?id= ${datos.genres[i].id}"> nombre del género: ${datos.genres[i].name}</a>
+                            <a href="detail-genres.html?id= ${datos.genres[i].id}"> <h2>género:</h2> ${datos.genres[i].name}</a>
                         </li>
-
-                        <li>
-                            lista de películas/series: 
-                        </li>
-
                     </ul>
 
                 </article>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let button = document.querySelector(".boton");
 
 let title = document.querySelector(".titulo-peli");
@@ -11,37 +10,16 @@ let arrayFavoritos = [];
 
 let container = document.querySelector("#contenedor-favoritos");
 
-button.addEventListener("click", function(){
-    let objeto = {titulo: title.innerText, fechaDeEstreno: releaseDate.innerText, imagen: img.src}
-    if(localStorage.getItem("favoritos")){
-        arrayFavoritos = JSON.parse(localStorage.getItem("favoritos"));
-    }
-    
-arrayFavoritos.push(objeto)
 
-    localStorage.setItem("favoritos", JSON.stringify(arrayFavoritos));
-})
-
-if(localStorage.getItem("favoritos")){
+if(localStorage.getItem("favoritos")) {
     let agregados = JSON.parse(localStorage.getItem("favoritos"));
-=======
-let container = document.querySelector("#contenedor-favoritos")
-
-console.log(JSON.parse(localStorage.getItem("favoritos")));
-
-let agregados = JSON.parse(localStorage.getItem("favoritos"))
-console.log(agregados);
-
-if(localStorage.getItem("favoritos")){
-    
-    agregados.forEach(function(peliculasSeries){
-        if(peliculasSeries.type == "pelicula"){
-            container.innerHTML +=     
-        `
+    let container = document.querySelector("#contenedor-favoritos");
+    console.log(JSON.parse(localStorage.getItem("favoritos")));
+    agregados.forEach(function (peliculasSeries) {
+            if (peliculasSeries.type == "pelicula") {
+                container.innerHTML +=
+                    `
         <article>
-        
-           
-        
             <div class="portada">  
                 <a href="detail-movie.html?id=${peliculasSeries.id}">
                 <img src="${peliculasSeries.imagen}">
@@ -55,14 +33,12 @@ if(localStorage.getItem("favoritos")){
             
         </article> 
                 `
-        }
-        else{
-            container.innerHTML +=     
-        `
+            }
+            else {
+                console.log(peliculasSeries);
+                container.innerHTML +=
+                    `
         <article>
-        
-           
-        
             <div class="portada">  
                 <a href="detail-series.html?id=${peliculasSeries.id}">
                 <img src="${peliculasSeries.imagen}">
@@ -76,8 +52,7 @@ if(localStorage.getItem("favoritos")){
             
         </article> 
                 `
-        }
-                
-    }) 
->>>>>>> cf13abf65adc74d8c4d337fc4856577e63714daf
+            }
+
+    })
 }

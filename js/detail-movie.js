@@ -20,6 +20,7 @@ const trama = document.querySelector(".sinopsis");
 
 const duracion = document.querySelector(".duracion");
 
+const button = document.querySelector(".boton")
 
 let url = "https://api.themoviedb.org/3/movie/" + 
 
@@ -49,7 +50,7 @@ fetch(url)
          ${datos.genres[i].name},
         <a/>
         `
-    }
+        }   
 
         titulo.innerText += " " +
         
@@ -77,47 +78,35 @@ fetch(url)
 
 // variables del favourites.js
 
-let button = document.querySelector(".boton")
-
-let title = document.querySelector(".titulo-peli")
-
-let releaseDate = document.querySelector(".estreno") 
-
-let img = document.querySelector(".imagen img")
-
 let arrayFavoritos = []
+let recuperoStorage = localStorage.getItem("favoritos")
 
-let queryString = window.location.search
-
-let objetoQuery = new URLSearchParams(queryString);
-
-let resultado = objetoQuery.get('id');
-
-button.addEventListener("click", function(){
-    let objeto = {titulo: title.innerText, fechaDeEstreno: releaseDate.innerText, imagen: img.src, type: "pelicula", id: resultado}
-    if(localStorage.getItem("favoritos")){
+button.addEventListener("click", function () {
+    let objeto = { titulo: titulo.innerText, fechaDeEstreno: parrafo.innerText.slice(18, 28), imagen: imagen.src, type: "pelicula", id: peliculasPagina}
+    //Condicional que pregunta si tengo algo en localStorage Y si no es nulo
+    if (localStorage.getItem("favoritos") && localStorage.getItem("favoritos") != null) {
+    //guarda en el array que declaraste antes lo que encontro en el LS parseado (lo paso de formato JSON a JS)
         arrayFavoritos = JSON.parse(localStorage.getItem("favoritos"))
-        for (let i = 0; i < arrayFavoritos.length; i++) {
-            if (arrayFavoritos[i].id == objeto.id) {
-             arrayFavoritos.splice(i, 1)   
-             console.log(arrayFavoritos);
-             console.log(1);
-            }
-            else{
-                arrayFavoritos.push(objeto)
-                console.log(2);
-            }
-         }
-    }
-    else{
+    //condicional que pregunta si el array incluye al objeto (lo busca en el array y si es que lo encuentra pregunta si lo incluye)
+        if (arrayFavoritos.includes(arrayFavoritos.find(function(element){ return element.id == objeto.id}))) {
+
+            button.innerText = 'Agregar a favoritos'
+            //elimina 1 objeto en el indice que encontro en arrayFavoritos.indexOf(objeto)
+            arrayFavoritos.splice(arrayFavoritos.indexOf(objeto), 1)
+
+            //si no encontro el objeto, quiere decir que no esta, entonces lo agrega
+        } else {
+            //lo pushea
+            arrayFavoritos.push(objeto)
+            button.innerText = 'Sacar de favoritos'
+        }
+        //si no encontro nada en el LS entonces pushea el objeto al array
+    } else {
         arrayFavoritos.push(objeto)
-        console.log(3);
+        button.innerText = 'Sacar de favoritos'
     }
 
-    let encontrado 
-    
-    
-
+    //setea el array en el lS con el identificador favoritos
     localStorage.setItem("favoritos", JSON.stringify(arrayFavoritos))
 })
 

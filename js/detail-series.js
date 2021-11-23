@@ -20,7 +20,7 @@ const trama = document.querySelector(".sinopsis");
 
 const episodios = document.querySelector(".episodios")
 
-
+const button = document.querySelector(".boton")
 
 
 let url = "https://api.themoviedb.org/3/tv/" + 
@@ -81,46 +81,26 @@ fetch(url)
 
 // variables del favourites.js
 
-let button = document.querySelector(".boton")
-
-let title = document.querySelector(".titulo-peli")
-
-let releaseDate = document.querySelector(".estreno") 
-
-let img = document.querySelector(".imagen img")
 
 let arrayFavoritos = []
 
-let queryString = window.location.search
-
-let objetoQuery = new URLSearchParams(queryString);
-
-let resultado = objetoQuery.get('id');
-
-button.addEventListener("click", function(){
-    let objeto = {titulo: title.innerText, fechaDeEstreno: releaseDate.innerText, imagen: img.src, type: "pelicula", id: resultado}
-    if(localStorage.getItem("favoritos")){
+button.addEventListener("click", function () {
+    let objeto = { titulo: titulo.innerText, fechaDeEstreno: estreno.innerText.slice(18,28), imagen: imagen.src, type: "tv", id: seriesPagina}
+     if (localStorage.getItem("favoritos") && localStorage.getItem("favoritos") != null) {
         arrayFavoritos = JSON.parse(localStorage.getItem("favoritos"))
-        for (let i = 0; i < arrayFavoritos.length; i++) {
-            if (arrayFavoritos[i].id == objeto.id) {
-             arrayFavoritos.splice(i, 1)   
-             console.log(arrayFavoritos);
-             console.log(1);
-            }
-            else{
-                arrayFavoritos.push(objeto)
-                console.log(2);
-            }
-         }
-    }
-    else{
+        if (arrayFavoritos.includes(arrayFavoritos.find(function(element){ return element.id == objeto.id}))) {
+
+            button.innerText = 'Agregar a favoritos'
+            arrayFavoritos.splice(arrayFavoritos.indexOf(objeto), 1)
+
+              } else {
+            arrayFavoritos.push(objeto)
+            button.innerText = 'Sacar de favoritos'
+        }
+           } else {
         arrayFavoritos.push(objeto)
-        console.log(3);
+        button.innerText = 'Sacar de favoritos'
     }
 
-    let encontrado 
-    
-    
-
-    localStorage.setItem("favoritos", JSON.stringify(arrayFavoritos))
+   localStorage.setItem("favoritos", JSON.stringify(arrayFavoritos))
 })
