@@ -7,6 +7,16 @@ let peliculasPagina = convertimientoId.get("id");
 
 console.log(peliculasPagina);
 
+let url = "https://api.themoviedb.org/3/movie/" + 
+
+peliculasPagina + 
+
+"?api_key=39567120a5a71b9d0780859871f73c82";
+
+
+
+
+
 
 const titulo = document.querySelector("h2");
 
@@ -24,11 +34,6 @@ const button = document.querySelector(".boton")
 
 const popularidad = document.querySelector(".calificacion")
 
-let url = "https://api.themoviedb.org/3/movie/" + 
-
-peliculasPagina + 
-
-"?api_key=39567120a5a71b9d0780859871f73c82";
 
 fetch(url)
 

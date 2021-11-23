@@ -64,7 +64,7 @@ fetch(url)
                 alt=${datos.results[i].title} > 
         </a>
 
-        <h3 class="h3-titulo">${datos.results[i].title}</h3>
+        <h3 class="h3-titulo">${datos.results[i].       e}</h3>
 
         <p>Fecha de lanzamiento: ${datos.results[i].release_date}
         </p>
