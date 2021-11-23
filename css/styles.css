@@ -105,6 +105,12 @@ justify-content: space-between;
     justify-content: space-between;
 }
 
+.h3-titulo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    text-align: center;
+}
 
 .lo-mas-valorado-en-peliculas {
     display: flex;
@@ -177,22 +183,23 @@ ul li .primer-a-detail-series {
 
 
 /*Empieza géneros*/
-    
-#section-titulo-generos{
-    text-align: center;
-    text-transform: uppercase;
+
+.h2-generos{
+    font-size: 35px;
 }
 
 #section-generos-peliculas{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 #section-generos-series{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 /*Termina géneros*/

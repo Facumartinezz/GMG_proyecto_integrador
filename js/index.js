@@ -22,7 +22,7 @@ fetch(url)
         <img src="https://image.tmdb.org/t/p/w300/${datos.results[i].poster_path}">
         </a> 
 
-        <h2> ${datos.results[i].name}</h2>
+        <h3 class="h3-titulo"> ${datos.results[i].name}</h3>
 
         <p>Fecha de lanzamiento: ${datos.results[i].first_air_date}</p>
 
@@ -32,9 +32,6 @@ fetch(url)
         `
 }
 })
-
-
-
 
 
 
@@ -67,7 +64,7 @@ fetch(url)
                 alt=${datos.results[i].title} > 
         </a>
 
-        <h2> ${datos.results[i].title}</h2>
+        <h3 class="h3-titulo">${datos.results[i].title}</h3>
 
         <p>Fecha de lanzamiento: ${datos.results[i].release_date}
         </p>
@@ -109,7 +106,7 @@ document.querySelector(".lo-mas-valorado-en-peliculas").innerHTML +=
             alt=${datos.results[i].title} > 
     </a>
 
-    <h2> ${datos.results[i].title}</h2>
+    <h3 class="h3-titulo"> ${datos.results[i].title}</h3>
 
     <p>Fecha de lanzamiento: ${datos.results[i].release_date}
     </p>
